@@ -1,0 +1,93 @@
+body {
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.loginForm {
+  z-index: 10000000;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: calc(50% - 200px);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 5px;
+  color: lightgreen;
+  background-color: rgba(0, 128, 0, 0.75);
+
+  border-radius: 20px;
+}
+.btns {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn {
+  background-color: lightgreen;
+  color: black;
+  width: 30%;
+  text-align: center;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: greenyellow;
+}
+
+.loginInput {
+  width: 50%;
+  height: 32px;
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid lightgreen;
+  border-radius: 8px;
+  color: lightgreen;
+}
+
+.transparentBg {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.statusBar {
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+
+  background-color: green;
+  color: lightgreen;
+  font-size: 10px;
+  min-height: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+  max-height: fit-content;
+}
+
+.waiting {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.431);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.waiting p {
+  font-size: 50px;
+  color: white;
+}

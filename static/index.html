@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers</title>
+    <script src="libs/three.js"></script>
+    <script src="libs/tween.umd.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="statusBar" class="statusBar">
+      <h2></h2>
+    </div>
+    <div id="userLogin" class="loginForm">
+      <h2>LOGOWANIE</h2>
+      <input type="text" class="loginInput" id="loginInput" />
+      <div class="btns">
+        <div id="loginBtn" class="btn">
+          <p>LOGUJ</p>
+        </div>
+        <div id="resetBtn" class="btn">
+          <p>RESET</p>
+        </div>
+      </div>
+    </div>
+    <div class="transparentBg" id="bg"></div>
+    <div class="waiting">
+      <p id="text">Waiting for another player</p>
+    </div>
+
+    <div id="root"></div>
+    <script src="Main.js" type="module"></script>
+    <script src="Net.js"></script>
+  </body>
+</html>
